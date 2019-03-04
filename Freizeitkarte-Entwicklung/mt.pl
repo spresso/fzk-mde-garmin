@@ -4479,6 +4479,9 @@ sub create_gmapsuppfile {
   # create License file
   create_licensefile;
 
+  # set common parameters
+  set_mkgmap_common_parameter;
+
   # mkgmap-Parameter
   # --description: Anzeige des Kartennamens in BaseCamp
   # --description: alleinige Anzeige des Kartennamens in einigen GPS-Geräten (z.B. 62er)
@@ -4525,6 +4528,9 @@ sub create_gmapfile {
 
   # create License file
   create_licensefile;
+  
+  # set common parameters
+  set_mkgmap_common_parameter;
 
   # mkgmap-Parameter
   # --description: Anzeige des Kartennamens in BaseCamp
