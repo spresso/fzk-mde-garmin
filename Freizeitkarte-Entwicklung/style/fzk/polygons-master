@@ -393,7 +393,7 @@ building = * & building != no & amenity = place_of_worship [0x36 resolution 24]
 # sind von der rechtlichen Definition her und auch in der Praxis keine NSG. [point, closedway]
 # Aus Gruenden der besseren Uebersichtlichkeit, wird die Ausweisung der NSGs begrenzt.
 # continue wg. weiterer identischer Flächen
-leisure = nature_reserve [0x0d resolution 20-23 continue]
+#leisure = nature_reserve [0x0d resolution 20-23 continue]
 
 
 # ------------------------------------------------------------
@@ -678,18 +678,18 @@ military = naval_base [0x38 resolution 20]
 # ------------------------------------------------------------
 
 # Kraftwerk - dient der Erzeugung von Strom oder Wärme. [point, closedway]
-power = generator & building != yes & length() > 150 [0x25 resolution 22 continue]
-power = generator & building != yes & length() <= 150 [0x25 resolution 24 continue]
+#power = generator & building != yes & length() > 150 [0x25 resolution 22 continue]
+#power = generator & building != yes & length() <= 150 [0x25 resolution 24 continue]
 
 # Umspannwerk - bezeichnet eine Umspannanlage, die ein Höchst- oder Hochspannungs-
 # mit einem weiteren Hochspannungs- oder Mittelspannungsnetz verbindet. [point, closedway]
-( power = station | power = plant ) & building != yes & length() > 150 [0x25 resolution 22 continue]
-( power = station | power = plant ) & building != yes & length() <= 150 [0x25 resolution 24 continue]
+#( power = station | power = plant ) & building != yes & length() > 150 [0x25 resolution 22 continue]
+#( power = station | power = plant ) & building != yes & length() <= 150 [0x25 resolution 24 continue]
 
 # Umspannstation, kleiner als 'station', verbindet ein Mittel- mit einem Niederspannungsnetz,
 # z.B. Mini-Umspannwerk, Trafohäuschen oder großer Trafokasten. [point, closedway]
-( power = sub_station | power = substation ) & building != yes & length() > 150 [0x25 resolution 22 continue]
-( power = sub_station | power = substation ) & building != yes & length() <= 150 [0x25 resolution 24 continue]
+#( power = sub_station | power = substation ) & building != yes & length() > 150 [0x25 resolution 22 continue]
+#( power = sub_station | power = substation ) & building != yes & length() <= 150 [0x25 resolution 24 continue]
 
 # "Schwarzer Fleck"  (für Qualitätssicherung).
 # Nur zusammen mit power-Objekten in "lines" aktivieren.
