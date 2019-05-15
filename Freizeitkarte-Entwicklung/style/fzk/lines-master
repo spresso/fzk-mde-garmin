@@ -1,4 +1,4 @@
-﻿# ---------------------------------------
+# ---------------------------------------
 # Zweck   : mkgmap-Regeln fuer Linien
 # Version : 0.1 - 23.09.2011
 # Version : 0.2 - 03.10.2011: Adresssuche
@@ -1202,14 +1202,14 @@ highway = path  & horse = designated {set highway = reitweg}
 highway = bridleway                  {set highway = reitweg}
 
 # Bruecke / Tunnel / Deich
-highway = reitweg & bridge = * & bridge != no  [0x010407 resolution 24 continue]
-highway = reitweg & tunnel = yes               [0x010408 resolution 24 continue]
-highway = reitweg & man_made = dyke            [0x011f05 resolution 24 continue]
+#highway = reitweg & bridge = * & bridge != no  [0x010407 resolution 24 continue]
+#highway = reitweg & tunnel = yes               [0x010408 resolution 24 continue]
+#highway = reitweg & man_made = dyke            [0x011f05 resolution 24 continue]
 ### highway = reitweg & embankment = yes [0x011f05 resolution 24 continue]
 
 # Kein Routing
 # 0x010e03 = Bitmap 2 (nur ein Pixel gefuellt, NoLabel)
-highway = reitweg [0x010e03 resolution 24]
+#highway = reitweg [0x010e03 resolution 24]
 
 
 # Treppen auf Fuss- / Wanderwegen:
@@ -1658,11 +1658,11 @@ schutzgebiet = national_park [0x1d resolution 21-23]
 
 # Stromleitung (Überlandleitung)
 # 0x29 = 1 (NoLabel)
-power = line [0x29 resolution 24]
+#power = line [0x29 resolution 24]
 
 # Freileitung mit Nieder- oder Mittelspannung.
 # 0x29 = 1 (NoLabel)
-power = minor_line [0x29 resolution 24]
+#power = minor_line [0x29 resolution 24]
 
 
 # ------------------------------------------------------------------
