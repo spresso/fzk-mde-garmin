@@ -679,7 +679,7 @@ place = village [0x0c00 resolution 21]
 # ------------------------------------------
 
 # Strommast: Mast für Hochspannungsüberlandleitungen. [point]
-power = tower {name "${name} ($__POWERTOWER__)" | "$__POWERTOWER__"} [0x6417 resolution 24]
+#power = tower {name "${name} ($__POWERTOWER__)" | "$__POWERTOWER__"} [0x6417 resolution 24]
 
 # Strommast für Nieder- und Mittelspannungsleitungen, oft aus Holz oder Beton. [point]
 # power = pole (wird derzeit nicht unterstützt)
@@ -883,7 +883,7 @@ amenity = university & name = * {name "${name} ($__UNIVERSITY__)"} [0x2c05 resol
 amenity = bicycle_rental {name "${name} ($__BICYCLERENTAL__)" | "$__BICYCLERENTAL__"} [0x2f13 resolution 24]
 
 # Busbahnhof (große Haltestelle). [point, closedway] (s.a. highway = bus_stop)
-amenity = bus_station                         {name "${name} ($__BUSSTATION__)" | "$__BUSSTATION__"} [0x2f08 resolution 24]
+#amenity = bus_station                         {name "${name} ($__BUSSTATION__)" | "$__BUSSTATION__"} [0x2f08 resolution 24]
 
 # Automobil-Club. [point, closedway]
 amenity = car_club & name = * {name "${name} ($__CARCLUB__)"} [0x2f0d resolution 24]
@@ -907,8 +907,8 @@ amenity = fuel { name "${brand}" | "${operator}" | "${name}" | "$__FUELSTATION__
 # amenity = parking & access = * {name "${name} (Parken eingeschränkt)" | "Parken (eingeschränkt)"} [0x2F0B resolution 24]
 # amenity = parking              {name "${name} (Parken)" | "Parken"}                               [0x4D00 resolution 24]
 #amenity = parking & access = *                                    & (capacity != * | capacity >= 10) {name "${name} ($__PARKING__ $__RESTRICTED__)" | "$__PARKING__ ($__RESTRICTED__)"} [0x2F0B resolution 24]
-amenity = parking &  access = * & access != public & access != yes & (capacity != * | capacity >= 10) {name "${name} ($__PARKING__ $__RESTRICTED__)" | "$__PARKING__ ($__RESTRICTED__)"} [0x2F0B resolution 24]
-amenity = parking & (capacity != * | capacity >= 10)              {name "${name} ($__PARKING__)" | "$__PARKING__"}                               [0x4D00 resolution 24]
+#amenity = parking &  access = * & access != public & access != yes & (capacity != * | capacity >= 10) {name "${name} ($__PARKING__ $__RESTRICTED__)" | "$__PARKING__ ($__RESTRICTED__)"} [0x2F0B resolution 24]
+#amenity = parking & (capacity != * | capacity >= 10)              {name "${name} ($__PARKING__)" | "$__PARKING__"}                               [0x4D00 resolution 24]
 
 # Kategorie "Finanzen"
 # --------------------
@@ -1123,7 +1123,7 @@ railway = station {name "${name} ($__RAILWAYSTATION__)" | "$__RAILWAYSTATION__"}
 railway = subway_entrance {name "${name} ($__SUBWAYENTRANCE__)" | "$__SUBWAYENTRANCE__"} [0x2f1f resolution 24]
 
 # Straßenbahnhaltestelle: Ein Ort an dem Pasagiere in Straßenbahnen ein- oder aussteigen können. [point]
-railway = tram_stop                            {name "${name} ($__TRAMSTOP__)" | "$__TRAMSTOP__"} [0x2f08 resolution 24]
+#railway = tram_stop                            {name "${name} ($__TRAMSTOP__)" | "$__TRAMSTOP__"} [0x2f08 resolution 24]
 
 # Eine Drehscheibe zum Wenden von Schienenfahrzeugen; findet sich häufig in älteren Bahnbetriebswerken. [point]
 # railway = turntable (wird derzeit nicht unterstützt)
@@ -1132,6 +1132,8 @@ railway = tram_stop                            {name "${name} ($__TRAMSTOP__)" |
 # ------------------------------------------------------------
 # Geschäfte / shop:
 # ------------------------------------------------------------
+
+shop = * {deletealltags}
 
 # Korrekturen:
 shop = carpenter            {set shop=carpet; delete carpenter}
@@ -1289,7 +1291,7 @@ shop = * & name = * {name "${name} (${shop})"} [0x2e0a resolution 24]
 # --------------------------------------------
 
 # Bushaltestelle. [point] (s.a. amenity = bus_station)
-highway = bus_stop {name "${name} ($__BUSSTOP__)" | "$__BUSSTOP__"} [0x2f08 resolution 24]
+#highway = bus_stop {name "${name} ($__BUSSTOP__)" | "$__BUSSTOP__"} [0x2f08 resolution 24]
 
 # Fußgängerüberweg (Zebrastreifen, Fußgängerfurt). [point]
 # highway = crossing (wird derzeit nicht unterstützt)
