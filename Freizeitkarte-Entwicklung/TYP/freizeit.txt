@@ -3633,8 +3633,8 @@ CustomColor=No
 ;LineWidth=4
 ;BorderWidth=1
 ;Xpm="0 0 2 0"
-;"1 c #EB989A"
-;"2 c #C77E80"
+;"1 c #FDD6A4"
+;"2 c #D4B388"
 ;String1=0x00,Bundesstraße breit
 ;String2=0x01,Bundesstraße breit
 ;String3=0x02,Bundesstraße
@@ -4542,8 +4542,8 @@ UseOrientation=Y
 LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #EB989A"
-"2 c #C77E80"
+"1 c #FDD6A4"
+"2 c #D4B388"
 String1=0x00,Bundesstraße (wie Autobahn) schmal
 String2=0x01,Bundesstraße (wie Autobahn) schmal
 String3=0x02,Bundesstraße (wie Autobahn)
@@ -4560,8 +4560,8 @@ UseOrientation=Y
 LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #EB989A"
-"2 c #C77E80"
+"1 c #FDD6A4"
+"2 c #D4B388"
 String1=0x00,Bundesstraße mittel
 String2=0x01,Bundesstraße mittel
 String3=0x02,Bundesstraße
@@ -4578,8 +4578,8 @@ UseOrientation=Y
 LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #EB989A"
-"2 c #C77E80"
+"1 c #FDD6A4"
+"2 c #D4B388"
 String1=0x00,Bundesstraße schmal
 String2=0x01,Bundesstraße schmal
 String3=0x02,Bundesstraße
@@ -5227,8 +5227,8 @@ UseOrientation=Y
 LineWidth=4
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #EB989A"
-"2 c #C77E80"
+"1 c #FDD6A4"
+"2 c #D4B388"
 String1=0x00,Bundesstraße breit
 String2=0x01,Bundesstraße breit
 String3=0x02,Bundesstraße
@@ -6010,8 +6010,8 @@ UseOrientation=Y
 LineWidth=4
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #EB989A"
-"2 c #C77E80"
+"1 c #FDD6A4"
+"2 c #D4B388"
 String1=0x00,Bundesstraße breit
 String2=0x01,Bundesstraße breit
 String3=0x02,Bundesstraße
