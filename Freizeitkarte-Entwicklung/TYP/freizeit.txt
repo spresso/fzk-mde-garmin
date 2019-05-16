@@ -2638,10 +2638,10 @@ CustomColor=No
 Type=0x12
 UseOrientation=Y
 Xpm="32 2 2  1"
-"! c #FF656A"
+"! c #BD6500"
 "  c none"
-"                                "
-"                                "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
 ;12345678901234567890123456789012
 String1=0x00,[Indexsuche]
 String2=0x01,[Indexsuche]
@@ -2659,8 +2659,8 @@ UseOrientation=Y
 Xpm="32 2 2  1"
 "! c #FF656A"
 "  c none"
-"                                "
-"                                "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
 ;12345678901234567890123456789012
 String1=0x00,[Treppe]
 String2=0x01,[Treppe]
@@ -2697,10 +2697,10 @@ CustomColor=No
 Type=0x16
 UseOrientation=Y
 Xpm="32 2 2  1"
-"! c #FF656A"
+"! c #FFFFFF"
 "  c none"
-"                                "
-"                                "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
 ;12345678901234567890123456789012
 String1=0x00,[Fußweg]
 String2=0x01,[Fußweg]
@@ -2990,7 +2990,7 @@ UseOrientation=Y
 LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #F6D4D4"
+"1 c #FEF0F0"
 "2 c #BABABA"
 String1=0x00,Wohngebietsstraße (Eingeschränkt) schmal
 String2=0x01,Wohngebietsstraße (Eingeschränkt) schmal
@@ -3799,7 +3799,7 @@ UseOrientation=Y
 LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #F6D4D4"
+"1 c #FEF0F0"
 "2 c #BABABA"
 String1=0x00,Straße unbekannter Art (Eingeschränkt)
 String2=0x01,Straße unbekannter Art (Eingeschränkt)
@@ -3853,8 +3853,11 @@ CustomColor=No
 Type=0x10e05
 UseOrientation=Y
 LineWidth=1
-Xpm="0 0 1 0"
-"1 c #FF656A"
+Xpm="32 2 2  1"
+"! c #FFFFFF"
+"  c none"
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"                                "
 String1=0x00,Fußweg schmal
 String2=0x01,Fußweg schmal
 String3=0x02,Fußweg
@@ -4430,12 +4433,9 @@ CustomColor=No
 [_line]
 Type=0x10f07
 UseOrientation=Y
-Xpm="32 2 2  1"
-"! c #0080FF"
-"  c none"
-"!!!!    !!!!    !!!!    !!!!    "
-"                                "
-;12345678901234567890123456789012
+LineWidth=2
+Xpm="0 0 1 0"
+"1 c #0080FF"
 String1=0x00,Radweg schmal
 String2=0x01,Radweg schmal
 String3=0x02,Radweg
@@ -4704,7 +4704,7 @@ UseOrientation=Y
 LineWidth=4
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #F6D4D4"
+"1 c #FEF0F0"
 "2 c #BABABA"
 String1=0x00,Wohngebietsstraße (Eingeschränkt) breit
 String2=0x01,Wohngebietsstraße (Eingeschränkt) breit
@@ -4722,7 +4722,7 @@ UseOrientation=Y
 LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #F6D4D4"
+"1 c #FEF0F0"
 "2 c #BABABA"
 String1=0x00,Wohngebietsstraße (Eingeschränkt) mittel
 String2=0x01,Wohngebietsstraße (Eingeschränkt) mittel
@@ -4758,7 +4758,7 @@ UseOrientation=Y
 LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #F6D4D4"
+"1 c #FEF0F0"
 "2 c #BABABA"
 String1=0x00,Nebenstraße schmal
 String2=0x01,Nebenstraße schmal
@@ -4776,7 +4776,7 @@ UseOrientation=Y
 LineWidth=3
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #F6D4D4"
+"1 c #FEF0F0"
 "2 c #BABABA"
 String1=0x00,Nebenstraße (Eingeschränkt) breit
 String2=0x01,Nebenstraße (Eingeschränkt) breit
@@ -4794,7 +4794,7 @@ UseOrientation=Y
 LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #F6D4D4"
+"1 c #FEF0F0"
 "2 c #BABABA"
 String1=0x00,Nebenstraße (Eingeschränkt) mittel
 String2=0x01,Nebenstraße (Eingeschränkt) mittel
@@ -4830,7 +4830,7 @@ UseOrientation=Y
 LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #F6D4D4"
+"1 c #FEF0F0"
 "2 c #BABABA"
 String1=0x00,Erschließungsstraße (Eingeschränkt) schmal
 String2=0x01,Erschließungsstraße (Eingeschränkt) schmal
@@ -4848,7 +4848,7 @@ UseOrientation=Y
 LineWidth=3
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #F6D4D4"
+"1 c #FEF0F0"
 "2 c #BABABA"
 String1=0x00,Erschließungsstraße (Eingeschränkt) breit
 String2=0x01,Erschließungsstraße (Eingeschränkt) breit
@@ -4866,7 +4866,7 @@ UseOrientation=Y
 LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #F6D4D4"
+"1 c #FEF0F0"
 "2 c #BABABA"
 String1=0x00,Erschließungsstraße (Eingeschränkt) mittel
 String2=0x01,Erschließungsstraße (Eingeschränkt) mittel
@@ -5173,8 +5173,11 @@ CustomColor=No
 Type=0x11f12
 UseOrientation=Y
 LineWidth=2
-Xpm="0 0 1 0"
-"1 c #FF656A"
+Xpm="32 2 2  1"
+"! c #FFFFFF"
+"  c none"
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
 String1=0x00,Fußweg
 String2=0x01,Fußweg
 String3=0x02,Fußweg
@@ -5366,11 +5369,9 @@ CustomColor=No
 [_line]
 Type=0x11f1d
 UseOrientation=Y
-Xpm="32 2 2  1"
-"! c #0080FF"
-"  c none"
-"!!!!    !!!!    !!!!    !!!!    "
-"!!!!    !!!!    !!!!    !!!!    "
+LineWidth=2
+Xpm="0 0 1 0"
+"1 c #0080FF"
 ;12345678901234567890123456789012
 String1=0x00,Radweg
 String2=0x01,Radweg
@@ -6430,9 +6431,10 @@ String3=0x02,Stadtteil
 String4=0x04,Urban District
 ExtendedLabels=Y
 FontStyle=NormalFont
-CustomColor=DayAndNight
-DaycustomColor:#4000FF
-NightcustomColor:#4000FF
+CustomColor=No
+;CustomColor=DayAndNight
+;DaycustomColor:#4000FF
+;NightcustomColor:#4000FF
 DayXpm="4 4 2 1"   Colormode=16
 "!	c #303030"
 "  	c none"

@@ -1,4 +1,4 @@
-# ---------------------------------------
+﻿# ---------------------------------------
 # Zweck   : mkgmap-Regeln fuer Linien
 # Version : 0.1 - 23.09.2011
 # Version : 0.2 - 03.10.2011: Adresssuche
@@ -404,6 +404,10 @@ boundary = protected_area & protect_id = 2 {set schutzgebiet = national_park}
 # - Tracktyp (grade1 - grade5)
 # - Oberflaechenglaette (smoothness)
 # - SAC-Wanderskala (sac_scale)
+
+# Buergersteige und Fussgängerüberwege entfernen
+#highway = footway & footway = sidewalk {deletealltags}
+#highway = footway & footway = crossing {deletealltags}
 
 highway = *
 & (surface = ground  | surface = compacted   | surface = dirt |
@@ -1169,13 +1173,13 @@ highway = fussweg & man_made = dyke            [0x011f05 resolution 24 continue]
 # 0x010e11 = Bitmap 2 (breit, NoLabel)
 # 0x010e12 = Bitmap 2 (schmal, nur ein Pixel gefuellt, NoLabel)
 highway = fussweg & keinrouting = yes [0x010e11 resolution 24 continue]
-highway = fussweg & keinrouting = yes [0x010e12 resolution 23-23]
+#highway = fussweg & keinrouting = yes [0x010e12 resolution 23-23]
 
 # Allgemein oeffentlich
 # 0x011f12 = 2 (breit, NoLabel)
 # 0x010e05 = 1 (schmal, NoLabel)
 highway = fussweg [0x011f12 resolution 24 continue]
-highway = fussweg [0x010e05 resolution 23-23]
+#highway = fussweg [0x010e05 resolution 23-23]
 
 
 # "radfussweg" verarbeiten:
