@@ -3943,7 +3943,7 @@ Type=0x10e0a
 UseOrientation=N
 LineWidth=1
 Xpm="0 0 1 0"
-"1 c #809BC0"
+"1 c #C77E80"
 String1=0x00,Autobahn sehr schmal
 String2=0x01,Autobahn sehr schmal
 String3=0x02,Autobahn
@@ -4024,6 +4024,7 @@ FontStyle=NoLabel (invisible)
 CustomColor=No
 [end]
 
+
 [_line]
 Type=0x10e0f
 UseOrientation=Y
@@ -4037,22 +4038,6 @@ String1=0x00,Feldweg (Eingeschränkt)
 String2=0x01,Feldweg (Eingeschränkt)
 String3=0x02,Feldweg (Eingeschränkt)
 String4=0x04,dirt road (restricted)
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10e10
-UseOrientation=Y
-LineWidth=1
-Xpm="0 0 1 0"
-"1 c #0080FF"
-String1=0x00,Rad- / Fußweg schmal
-String2=0x01,Rad- / Fußweg schmal
-String3=0x02,Rad- / Fußweg
-String4=0x04,Bridleway narrow
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
@@ -4431,22 +4416,6 @@ CustomColor=No
 
 
 [_line]
-Type=0x10f07
-UseOrientation=Y
-LineWidth=2
-Xpm="0 0 1 0"
-"1 c #0080FF"
-String1=0x00,Radweg schmal
-String2=0x01,Radweg schmal
-String3=0x02,Radweg
-String4=0x04,Cycleway
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-[end]
-
-
-[_line]
 Type=0x10f08
 UseOrientation=Y
 LineWidth=2
@@ -4488,8 +4457,8 @@ UseOrientation=Y
 LineWidth=3
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #809BC0"
-"2 c #617188"
+"1 c #EB989A"
+"2 c #C77E80"
 String1=0x00,Autobahn mittel
 String2=0x01,Autobahn mittel
 String3=0x02,Autobahn
@@ -4506,8 +4475,8 @@ UseOrientation=Y
 LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #809BC0"
-"2 c #617188"
+"1 c #EB989A"
+"2 c #C77E80"
 String1=0x00,Autobahn schmal
 String2=0x01,Autobahn schmal
 String3=0x02,Autobahn
@@ -4991,31 +4960,6 @@ ExtendedLabels=N
 
 
 [_line]
-Type=0x11f05
-UseOrientation=N
-Xpm="32 10 2  1"
-"! c #333333"
-"  c none"
-"  !   !   !   !   !   !   !   ! "
-"  !   !   !   !   !   !   !   ! "
-"  !   !   !   !   !   !   !   ! "
-"                                "
-"                                "
-"                                "
-"                                "
-"  !   !   !   !   !   !   !   ! "
-"  !   !   !   !   !   !   !   ! "
-"  !   !   !   !   !   !   !   ! "
-;12345678901234567890123456789012
-String1=0x00,Damm
-String2=0x01,Damm
-String3=0x02,Damm
-String4=0x04,Dam
-ExtendedLabels=N
-[end]
-
-
-[_line]
 Type=0x11f06
 UseOrientation=N
 LineWidth=1
@@ -5194,8 +5138,8 @@ UseOrientation=Y
 LineWidth=5
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #809BC0"
-"2 c #617188"
+"1 c #EB989A"
+"2 c #C77E80"
 String1=0x00,Autobahn breit
 String2=0x01,Autobahn breit
 String3=0x02,Autobahn
@@ -5351,28 +5295,11 @@ CustomColor=No
 
 
 [_line]
-Type=0x11f1c
-UseOrientation=Y
-LineWidth=2
-Xpm="0 0 1 0"
-"1 c #0080FF"
-String1=0x00,Rad- / Fußweg breit
-String2=0x01,Rad- / Fußweg breit
-String3=0x02,Rad- / Fußweg
-String4=0x04,Bridleway
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-[end]
-
-
-[_line]
 Type=0x11f1d
 UseOrientation=Y
 LineWidth=2
 Xpm="0 0 1 0"
 "1 c #0080FF"
-;12345678901234567890123456789012
 String1=0x00,Radweg
 String2=0x01,Radweg
 String3=0x02,Radweg
