@@ -1133,8 +1133,6 @@ railway = subway_entrance {name "${name} ($__SUBWAYENTRANCE__)" | "$__SUBWAYENTR
 # Geschäfte / shop:
 # ------------------------------------------------------------
 
-shop = * {deletealltags}
-
 # Korrekturen:
 shop = carpenter            {set shop=carpet; delete carpenter}
 shop = carpentry            {set shop=carpet; delete carpentry}

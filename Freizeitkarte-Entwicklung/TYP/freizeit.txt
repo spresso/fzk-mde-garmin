@@ -3452,7 +3452,7 @@ Type=0x10e07
 UseOrientation=Y
 LineWidth=2
 Xpm="0 0 1 0"
-"1 c #BD9500"
+"1 c #A15E12"
 String1=0x00,Feld- / Waldweg (1) schmal
 String2=0x01,Feld- / Waldweg (1) schmal
 String3=0x02,Feld- / Waldweg (1)
@@ -3487,7 +3487,7 @@ Type=0x10e09
 UseOrientation=Y
 LineWidth=3
 Xpm="0 0 1 0"
-"1 c #BD9500"
+"1 c #A15E12"
 String1=0x00,Feld- / Waldweg (1) breit
 String2=0x01,Feld- / Waldweg (1) breit
 String3=0x02,Feld- / Waldweg (1)
