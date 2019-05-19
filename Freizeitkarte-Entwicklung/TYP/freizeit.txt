@@ -2394,7 +2394,7 @@ ExtendedLabels=N
 Type=0x02
 UseOrientation=Y
 Xpm="32 2 2  1"
-"! c #EB989A"
+"! c #DC96A2"
 "  c none"
 "                                "
 "                                "
@@ -2411,7 +2411,7 @@ ExtendedLabels=N
 Type=0x03
 UseOrientation=Y
 Xpm="32 2 2  1"
-"! c #EB989A"
+"! c #DC96A2"
 "  c none"
 "                                "
 "                                "
@@ -3009,7 +3009,7 @@ LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FEFEFE"
-"2 c #BABABA"
+"2 c #808080"
 String1=0x00,Nebenstraße schmal
 String2=0x01,Nebenstraße schmal
 String3=0x02,Nebenstraße
@@ -3027,7 +3027,7 @@ LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FEFEFE"
-"2 c #BABABA"
+"2 c #808080"
 String1=0x00,Erschließungsstraße schmal
 String2=0x01,Erschließungsstraße schmal
 String3=0x02,Erschließungsstraße
@@ -3044,7 +3044,7 @@ UseOrientation=Y
 LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #F6D4D4"
+"1 c #808080"
 "2 c #FEFEFE"
 String1=0x00,Spielstraße (Eingeschränkt) schmal
 String2=0x01,Spielstraße (Eingeschränkt) schmal
@@ -3089,297 +3089,6 @@ ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
 [end]
-
-
-;[_line]
-;Type=0x1010b
-;UseOrientation=Y
-;LineWidth=2
-;Xpm="0 0 1 0"
-;"1 c #99CCCC"
-;String1=0x00,Abwassergraben
-;String2=0x01,Abwassergraben
-;String3=0x02,Abwassergraben
-;String4=0x04,Drainage Ditch/Drain
-;ExtendedLabels=Y
-;FontStyle=NoLabel (invisible)
-;CustomColor=No
-;[end]
-
-
-;[_line]
-;Type=0x1010c
-;UseOrientation=Y
-;LineWidth=2
-;Xpm="0 0 1 0"
-;"1 c #BABABA"
-;String1=0x00,Staudamm / -mauer
-;String2=0x01,Staudamm / -mauer
-;String3=0x02,Staudamm / -mauer
-;String4=0x04,Dam
-;ExtendedLabels=Y
-;FontStyle=NoLabel (invisible)
-;CustomColor=No
-;[end]
-
-
-;[_line]
-;Type=0x1010d
-;UseOrientation=Y
-;LineWidth=4
-;BorderWidth=1
-;Xpm="0 0 2 0"
-;"1 c #FDD6A4"
-;"2 c #D4B388"
-;String1=0x00,Landstraße breit
-;String2=0x01,Landstraße breit
-;String3=0x02,Landstraße
-;String4=0x04,Secondary Road
-;ExtendedLabels=Y
-;FontStyle=NoLabel (invisible)
-;CustomColor=No
-;[end]
-
-
-;[_line]
-;Type=0x1010e
-;UseOrientation=Y
-;LineWidth=4
-;BorderWidth=1
-;Xpm="0 0 2 0"
-;"1 c #FEFEB3"
-;"2 c #BBBBBB"
-;String1=0x00,Kreisstraße breit
-;String2=0x01,Kreisstraße breit
-;String3=0x02,Kreisstraße
-;String4=0x04,Country Road
-;ExtendedLabels=Y
-;FontStyle=NoLabel (invisible)
-;CustomColor=No
-;[end]
-
-
-;[_line]
-;Type=0x10110
-;UseOrientation=N
-;Xpm="32 2 2  1"
-;"! c #808080"
-;"  c none"
-;"  !!      !!      !!      !!    "
-;"  !!      !!      !!      !!    "
-;;12345678901234567890123456789012
-;String1=0x00,Schienen (Rückbau)
-;String2=0x01,Schienen (Rückbau)
-;String3=0x02,Schienen (Rückbau)
-;String4=0x04,Decommisioned Railway
-;ExtendedLabels=Y
-;FontStyle=NoLabel (invisible)
-;CustomColor=No
-;[end]
-
-
-;[_line]
-;Type=0x10111
-;UseOrientation=N
-;Xpm="32 2 2  1"
-;"! c #808080"
-;"# c #FFFFFF"
-;"!!!!!!!!!#######!!!!!!!!!#######"
-;"!!!!!!!!!#######!!!!!!!!!#######"
-;;12345678901234567890123456789012
-;String1=0x00,Bahn
-;String2=0x01,Bahn
-;String3=0x02,Bahn
-;String4=0x04,Railway
-;ExtendedLabels=Y
-;FontStyle=NoLabel (invisible)
-;CustomColor=No
-;[end]
-
-
-;[_line]
-;Type=0x10112
-;UseOrientation=N
-;LineWidth=2
-;BorderWidth=0
-;Xpm="0 0 2 0"
-;"1 c #808080"
-;"2 c #FFFFFF"
-;String1=0x00,S-Bahn
-;String2=0x01,S-Bahn
-;String3=0x02,S-Bahn
-;String4=0x04,Light Rail
-;ExtendedLabels=Y
-;FontStyle=SmallFont
-;CustomColor=No
-;[end]
-
-
-;[_line]
-;Type=0x10113
-;UseOrientation=Y
-;Xpm="32 2 2  1"
-;"! c #808080"
-;"  c none"
-;"!!!!!   !!!!!   !!!!!   !!!!!   "
-;"!!!!!   !!!!!   !!!!!   !!!!!   "
-;;12345678901234567890123456789012
-;String1=0x00,U-Bahn
-;String2=0x01,U-Bahn
-;String3=0x02,U-Bahn
-;String4=0x04,Subway/Underground Railway
-;ExtendedLabels=Y
-;FontStyle=SmallFont
-;CustomColor=No
-;[end]
-
-
-;[_line]
-;Type=0x10115
-;UseOrientation=N
-;Xpm="32 2 2  1"
-;"! c #808080"
-;"  c none"
-;"!!!!    !!!!    !!!!    !!!!    "
-;"!!!!    !!!!    !!!!    !!!!    "
-;;12345678901234567890123456789012
-;String1=0x00,S-Bahn (Tunnel)
-;String2=0x01,S-Bahn (Tunnel)
-;String3=0x02,S-Bahn (Tunnel)
-;String4=0x04,Light Rail (tunnel)
-;ExtendedLabels=Y
-;FontStyle=SmallFont
-;CustomColor=No
-;[end]
-
-
-;[_line]
-;Type=0x10116
-;UseOrientation=N
-;Xpm="32 2 2  1"
-;"! c #808080"
-;"  c none"
-;"!!!!!!!!        !!!!!!!!        "
-;"!!!!!!!!        !!!!!!!!        "
-;;12345678901234567890123456789012
-;String1=0x00,Bahn (Tunnel)
-;String2=0x01,Bahn (Tunnel)
-;String3=0x02,Bahn (Tunnel)
-;String4=0x04,Railway (tunnel)
-;ExtendedLabels=Y
-;FontStyle=NoLabel (invisible)
-;CustomColor=No
-;[end]
-
-
-;[_line]
-;Type=0x10117
-;UseOrientation=N
-;LineWidth=2
-;Xpm="0 0 1 0"
-;"1 c #808080"
-;String1=0x00,U-Bahn (oberirdisch)
-;String2=0x01,U-Bahn (oberirdisch)
-;String3=0x02,U-Bahn (oberirdisch)
-;String4=0x04,Subway (overground)
-;ExtendedLabels=Y
-;FontStyle=SmallFont
-;CustomColor=No
-;[end]
-
-
-;[_line]
-;Type=0x10118
-;UseOrientation=Y
-;Xpm="32 2 2  1"
-;"! c #A0A0A0"
-;"  c none"
-;"!!  !!  !!  !!  !!  !!  !!  !!  "
-;"!!  !!  !!  !!  !!  !!  !!  !!  "
-;;12345678901234567890123456789012
-;String1=0x00,Klettersteig breit
-;String2=0x01,Klettersteig breit
-;String3=0x02,Klettersteig
-;String4=0x04,Via Ferrata
-;ExtendedLabels=Y
-;FontStyle=NoLabel (invisible)
-;CustomColor=No
-;[end]
-
-
-;[_line]
-;Type=0x10119
-;UseOrientation=Y
-;Xpm="32 2 2  1"
-;"! c #A0A0A0"
-;"  c none"
-;"!!  !!  !!  !!  !!  !!  !!  !!  "
-;"                                "
-;;12345678901234567890123456789012
-;String1=0x00,Klettersteig schmal
-;String2=0x01,Klettersteig schmal
-;String3=0x02,Klettersteig
-;String4=0x04,Via Ferrata
-;ExtendedLabels=Y
-;FontStyle=NoLabel (invisible)
-;CustomColor=No
-;[end]
-
-
-;[_line]
-;Type=0x1011a
-;UseOrientation=Y
-;Xpm="32 4 2  1"
-;"! c #606060"
-;"  c none"
-;"                                "
-;"        !               !       "
-;"!!!!!!! ! !!!!!!!!!!!!! ! !!!!!!"
-;"        !               !       "
-;;12345678901234567890123456789012
-;String1=0x00,Materialseilbahn
-;String2=0x01,Materialseilbahn
-;String3=0x02,Materialseilbahn
-;String4=0x04,Ropeway (for material transport)
-;ExtendedLabels=Y
-;FontStyle=NoLabel (invisible)
-;CustomColor=No
-;[end]
-
-
-;[_line]
-;Type=0x1011b
-;UseOrientation=N
-;Xpm="32 2 2  1"
-;"! c #808080"
-;"  c none"
-;"!!!!    !!!!    !!!!    !!!!    "
-;"!!!!    !!!!    !!!!    !!!!    "
-;;12345678901234567890123456789012
-;String1=0x00,Straßenbahn (Tunnel)
-;String2=0x01,Straßenbahn (Tunnel)
-;String3=0x02,Straßenbahn (Tunnel)
-;String4=0x04,Tramway (tunnel)
-;ExtendedLabels=Y
-;FontStyle=SmallFont
-;CustomColor=No
-;[end]
-
-
-;[_line]
-;Type=0x1011c
-;UseOrientation=N
-;LineWidth=1
-;Xpm="0 0 1 0"
-;"1 c #7BCA8B"
-;String1=0x00,Naturreservat
-;String2=0x01,Naturreservat
-;String3=0x02,Naturreservat
-;String4=0x04,Nature Reserve
-;ExtendedLabels=Y
-;FontStyle=NoLabel (invisible)
-;CustomColor=No
-;[end]
 
 
 [_line]
@@ -3609,156 +3318,6 @@ CustomColor=No
 [end]
 
 
-;[_line]
-;Type=0x1040d
-;UseOrientation=Y
-;LineWidth=4
-;BorderWidth=1
-;Xpm="0 0 2 0"
-;"1 c #EB989A"
-;"2 c #C77E80"
-;String1=0x00,Bundesstraße (wie Autobahn) breit
-;String2=0x01,Bundesstraße (wie Autobahn) breit
-;String3=0x02,Bundesstraße (wie Autobahn)
-;String4=0x04,Highway
-;ExtendedLabels=Y
-;FontStyle=SmallFont
-;CustomColor=No
-;[end]
-
-
-;[_line]
-;Type=0x1040e
-;UseOrientation=Y
-;LineWidth=4
-;BorderWidth=1
-;Xpm="0 0 2 0"
-;"1 c #FDD6A4"
-;"2 c #D4B388"
-;String1=0x00,Bundesstraße breit
-;String2=0x01,Bundesstraße breit
-;String3=0x02,Bundesstraße
-;String4=0x04,Highway
-;ExtendedLabels=Y
-;FontStyle=SmallFont
-;CustomColor=No
-;[end]
-
-
-;[_line]
-;Type=0x10410
-;UseOrientation=Y
-;Xpm="32 2 2  1"
-;"! c #8080FF"
-;"  c none"
-;"!!  !!  !!  !!  !!  !!  !!  !!  "
-;"!!  !!  !!  !!  !!  !!  !!  !!  "
-;;12345678901234567890123456789012
-;String1=0x00,Bergwanderweg T3 / T4 breit
-;String2=0x01,Bergwanderweg T3 / T4 breit
-;String3=0x02,Bergwanderweg T3 / T4
-;String4=0x04,Alpine Trail T3 / T4
-;ExtendedLabels=Y
-;FontStyle=NoLabel (invisible)
-;CustomColor=No
-;[end]
-
-
-;[_line]
-;Type=0x10411
-;UseOrientation=Y
-;Xpm="32 2 2  1"
-;"! c #A0A0A0"
-;"  c none"
-;"!!  !!  !!  !!  !!  !!  !!  !!  "
-;"!!  !!  !!  !!  !!  !!  !!  !!  "
-;;12345678901234567890123456789012
-;String1=0x00,Bergwanderweg T5 / T6 breit
-;String2=0x01,Bergwanderweg T5 / T6 breit
-;String3=0x02,Bergwanderweg T5 / T6
-;String4=0x04,Alpine Trail T5/T6
-;ExtendedLabels=Y
-;FontStyle=NoLabel (invisible)
-;CustomColor=No
-;[end]
-
-
-;[_line]
-;Type=0x10412
-;UseOrientation=Y
-;Xpm="32 2 2  1"
-;"! c #000000"
-;"  c none"
-;"!!  !!  !!  !!  !!  !!  !!  !!  "
-;"!!  !!  !!  !!  !!  !!  !!  !!  "
-;;12345678901234567890123456789012
-;String1=0x00,Bergwanderweg T1 / T2 breit
-;String2=0x01,Bergwanderweg T1 / T2 breit
-;String3=0x02,Bergwanderweg T1 / T2 breit
-;String4=0x04, Alpine Trail T1 / T2
-;ExtendedLabels=Y
-;FontStyle=NoLabel (invisible)
-;CustomColor=No
-;[end]
-
-
-;[_line]
-;Type=0x10413
-;UseOrientation=Y
-;Xpm="32 2 2  1"
-;"! c #8080FF"
-;"  c none"
-;"!!  !!  !!  !!  !!  !!  !!  !!  "
-;"                                "
-;;12345678901234567890123456789012
-;String1=0x00,Bergwanderweg T3 / T4 schmal
-;String2=0x01,Bergwanderweg T3 / T4 schmal
-;String3=0x02,Bergwanderweg T3 / T4
-;String4=0x04, Alpine Trail T3 / T4
-;ExtendedLabels=Y
-;FontStyle=NoLabel (invisible)
-;CustomColor=No
-;[end]
-
-
-;[_line]
-;Type=0x10414
-;UseOrientation=Y
-;Xpm="32 2 2  1"
-;"! c #A0A0A0"
-;"  c none"
-;"!!  !!  !!  !!  !!  !!  !!  !!  "
-;"                                "
-;;12345678901234567890123456789012
-;String1=0x00,Bergwanderweg T5 / T6 schmal
-;String2=0x01,Bergwanderweg T5 / T6 schmal
-;String3=0x02,Bergwanderweg T5 / T6
-;String4=0x04,Alpine Trail T5 / T6
-;ExtendedLabels=Y
-;FontStyle=NoLabel (invisible)
-;CustomColor=No
-;[end]
-
-
-;[_line]
-;Type=0x10415
-;UseOrientation=Y
-;Xpm="32 2 2  1"
-;"! c #000000"
-;"  c none"
-;"!!  !!  !!  !!  !!  !!  !!  !!  "
-;"                                "
-;;12345678901234567890123456789012
-;String1=0x00,Bergwanderweg T1 / T2 schmal
-;String2=0x01,Bergwanderweg T1 / T2 schmal
-;String3=0x02,Bergwanderweg T1 / T2
-;String4=0x04,Alpine Trail T1 / T2
-;ExtendedLabels=Y
-;FontStyle=NoLabel (invisible)
-;CustomColor=No
-;[end]
-
-
 [_line]
 Type=0x10e00
 UseOrientation=Y
@@ -3800,7 +3359,7 @@ LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FEF0F0"
-"2 c #BABABA"
+"2 c #ADADAD"
 String1=0x00,Straße unbekannter Art (Eingeschränkt)
 String2=0x01,Straße unbekannter Art (Eingeschränkt)
 String3=0x02,Straße unbekannter Art (Eingeschränkt)
@@ -3959,7 +3518,7 @@ Type=0x10e0b
 UseOrientation=N
 LineWidth=1
 Xpm="0 0 1 0"
-"1 c #EB989A"
+"1 c #DC96A2"
 String1=0x00,Bundesstraße sehr schmal
 String2=0x01,Bundesstraße sehr schmal
 String3=0x02,Bundesstraße
@@ -3996,7 +3555,7 @@ LineWidth=4
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FDD6A4"
-"2 c #D4B388"
+"2 c #FBA637"
 String1=0x00,Landstraße breit
 String2=0x01,Landstraße breit
 String3=0x02,Landstraße
@@ -4014,7 +3573,7 @@ LineWidth=4
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FEFEB3"
-"2 c #BBBBBB"
+"2 c #808080"
 String1=0x00,Kreisstraße breit
 String2=0x01,Kreisstraße breit
 String3=0x02,Kreisstraße
@@ -4349,7 +3908,7 @@ UseOrientation=Y
 LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #BABABA"
+"1 c #808080"
 "2 c #FEFEFE"
 String1=0x00,Spielstraße mittel
 String2=0x01,Spielstraße mittel
@@ -4367,7 +3926,7 @@ UseOrientation=Y
 LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #BABABA"
+"1 c #808080"
 "2 c #FEFEFE"
 String1=0x00,Spielstraße schmal
 String2=0x01,Spielstraße schmal
@@ -4385,7 +3944,7 @@ UseOrientation=Y
 LineWidth=4
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #F6D4D4"
+"1 c #808080"
 "2 c #FEFEFE"
 String1=0x00,Spielstraße (Eingeschränkt) breit
 String2=0x01,Spielstraße (Eingeschränkt) breit
@@ -4403,7 +3962,7 @@ UseOrientation=Y
 LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #F6D4D4"
+"1 c #808080"
 "2 c #FEFEFE"
 String1=0x00,Spielstraße (Eingeschränkt) mittel
 String2=0x01,Spielstraße (Eingeschränkt) mittel
@@ -4422,7 +3981,7 @@ LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FEFEFE"
-"2 c #BABABA"
+"2 c #ADADAD"
 String1=0x00,Fußgängerstraße mittel
 String2=0x01,Fußgängerstraße mittel
 String3=0x02,Fußgängerstraße mittel
@@ -4440,7 +3999,7 @@ LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FEFEFE"
-"2 c #BABABA"
+"2 c #808080"
 String1=0x00,Fußgängerstraße schmal
 String2=0x01,Fußgängerstraße schmal
 String3=0x02,Fußgängerstraße
@@ -4457,8 +4016,8 @@ UseOrientation=Y
 LineWidth=3
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #EB989A"
-"2 c #C77E80"
+"1 c #DC96A2"
+"2 c #BF4055"
 String1=0x00,Autobahn mittel
 String2=0x01,Autobahn mittel
 String3=0x02,Autobahn
@@ -4475,8 +4034,8 @@ UseOrientation=Y
 LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #EB989A"
-"2 c #C77E80"
+"1 c #DC96A2"
+"2 c #BF4055"
 String1=0x00,Autobahn schmal
 String2=0x01,Autobahn schmal
 String3=0x02,Autobahn
@@ -4493,8 +4052,8 @@ UseOrientation=Y
 LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #EB989A"
-"2 c #C77E80"
+"1 c #DC96A2"
+"2 c #BF4055"
 String1=0x00,Bundesstraße (wie Autobahn) mittel
 String2=0x01,Bundesstraße (wie Autobahn) mittel
 String3=0x02,Bundesstraße (wie Autobahn)
@@ -4512,7 +4071,7 @@ LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FDD6A4"
-"2 c #D4B388"
+"2 c #FBA637"
 String1=0x00,Bundesstraße (wie Autobahn) schmal
 String2=0x01,Bundesstraße (wie Autobahn) schmal
 String3=0x02,Bundesstraße (wie Autobahn)
@@ -4530,7 +4089,7 @@ LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FDD6A4"
-"2 c #D4B388"
+"2 c #FBA637"
 String1=0x00,Bundesstraße mittel
 String2=0x01,Bundesstraße mittel
 String3=0x02,Bundesstraße
@@ -4584,7 +4143,7 @@ LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FDD6A4"
-"2 c #D4B388"
+"2 c #FBA637"
 String1=0x00,Landstraße schmal
 String2=0x01,Landstraße schmal
 String3=0x02,Landstraße
@@ -4602,7 +4161,7 @@ LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FEFEB3"
-"2 c #BBBBBB"
+"2 c #808080"
 String1=0x00,Kreisstraße mittel
 String2=0x01,Kreisstraße mittel
 String3=0x02,Kreisstraße
@@ -4620,7 +4179,7 @@ LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FEFEB3"
-"2 c #BBBBBB"
+"2 c #808080"
 String1=0x00,Kreisstraße schmal
 String2=0x01,Kreisstraße schmal
 String3=0x02,Kreisstraße
@@ -4638,7 +4197,7 @@ LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FEFEFE"
-"2 c #BABABA"
+"2 c #808080"
 String1=0x00,Wohngebietsstraße mittel
 String2=0x01,Wohngebietsstraße mittel
 String3=0x02,Wohngebietsstraße
@@ -4656,7 +4215,7 @@ LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FEFEFE"
-"2 c #BABABA"
+"2 c #808080"
 String1=0x00,Wohngebietsstraße schmal
 String2=0x01,Wohngebietsstraße schmal
 String3=0x02,Wohngebietsstraße
@@ -4674,7 +4233,7 @@ LineWidth=4
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FEF0F0"
-"2 c #BABABA"
+"2 c #808080"
 String1=0x00,Wohngebietsstraße (Eingeschränkt) breit
 String2=0x01,Wohngebietsstraße (Eingeschränkt) breit
 String3=0x02,Wohngebietsstraße (Eingeschränkt)
@@ -4692,7 +4251,7 @@ LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FEF0F0"
-"2 c #BABABA"
+"2 c #808080"
 String1=0x00,Wohngebietsstraße (Eingeschränkt) mittel
 String2=0x01,Wohngebietsstraße (Eingeschränkt) mittel
 String3=0x02,Wohngebietsstraße (Eingeschränkt)
@@ -4710,7 +4269,7 @@ LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FEFEFE"
-"2 c #BABABA"
+"2 c #808080"
 String1=0x00,Nebenstraße breit
 String2=0x01,Nebenstraße breit
 String3=0x02,Nebenstraße
@@ -4728,7 +4287,7 @@ LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FEF0F0"
-"2 c #BABABA"
+"2 c #808080"
 String1=0x00,Nebenstraße schmal
 String2=0x01,Nebenstraße schmal
 String3=0x02,Nebenstraße
@@ -4746,7 +4305,7 @@ LineWidth=3
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FEF0F0"
-"2 c #BABABA"
+"2 c #ADADAD"
 String1=0x00,Nebenstraße (Eingeschränkt) breit
 String2=0x01,Nebenstraße (Eingeschränkt) breit
 String3=0x02,Nebenstraße (Eingeschränkt)
@@ -4764,7 +4323,7 @@ LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FEF0F0"
-"2 c #BABABA"
+"2 c #ADADAD"
 String1=0x00,Nebenstraße (Eingeschränkt) mittel
 String2=0x01,Nebenstraße (Eingeschränkt) mittel
 String3=0x02,Nebenstraße (Eingeschränkt)
@@ -4782,7 +4341,7 @@ LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FEFEFE"
-"2 c #BABABA"
+"2 c #808080"
 String1=0x00,Erschließungsstraße mittel
 String2=0x01,Erschließungsstraße mittel
 String3=0x02,Erschließungsstraße
@@ -4800,7 +4359,7 @@ LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FEF0F0"
-"2 c #BABABA"
+"2 c #808080"
 String1=0x00,Erschließungsstraße (Eingeschränkt) schmal
 String2=0x01,Erschließungsstraße (Eingeschränkt) schmal
 String3=0x02,Erschließungsstraße (Eingeschränkt)
@@ -4818,7 +4377,7 @@ LineWidth=3
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FEF0F0"
-"2 c #BABABA"
+"2 c #ADADAD"
 String1=0x00,Erschließungsstraße (Eingeschränkt) breit
 String2=0x01,Erschließungsstraße (Eingeschränkt) breit
 String3=0x02,Erschließungsstraße (Eingeschränkt)
@@ -4836,7 +4395,7 @@ LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FEF0F0"
-"2 c #BABABA"
+"2 c #ADADAD"
 String1=0x00,Erschließungsstraße (Eingeschränkt) mittel
 String2=0x01,Erschließungsstraße (Eingeschränkt) mittel
 String3=0x02,Erschließungsstraße (Eingeschränkt)
@@ -5138,8 +4697,8 @@ UseOrientation=Y
 LineWidth=5
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #EB989A"
-"2 c #C77E80"
+"1 c #DC96A2"
+"2 c #BF4055"
 String1=0x00,Autobahn breit
 String2=0x01,Autobahn breit
 String3=0x02,Autobahn
@@ -5156,8 +4715,8 @@ UseOrientation=Y
 LineWidth=4
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #EB989A"
-"2 c #C77E80"
+"1 c #DC96A2"
+"2 c #BF4055"
 String1=0x00,Bundesstraße (wie Autobahn) breit
 String2=0x01,Bundesstraße (wie Autobahn) breit
 String3=0x02,Bundesstraße (wie Autobahn)
@@ -5193,7 +4752,7 @@ LineWidth=4
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FDD6A4"
-"2 c #D4B388"
+"2 c #FBA637"
 String1=0x00,Landstraße breit
 String2=0x01,Landstraße breit
 String3=0x02,Landstraße
@@ -5211,7 +4770,7 @@ LineWidth=4
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FEFEFE"
-"2 c #BABABA"
+"2 c #808080"
 String1=0x00,Wohngebietsstraße breit
 String2=0x01,Wohngebietsstraße breit
 String3=0x02,Wohngebietsstraße
@@ -5229,7 +4788,7 @@ LineWidth=3
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FEFEFE"
-"2 c #BABABA"
+"2 c #808080"
 String1=0x00,Nebenstraße breit
 String2=0x01,Nebenstraße breit
 String3=0x02,Nebenstraße
@@ -5247,7 +4806,7 @@ LineWidth=3
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FEFEFE"
-"2 c #BABABA"
+"2 c #808080"
 String1=0x00,Erschließungsstraße breit
 String2=0x01,Erschließungsstraße breit
 String3=0x02,Erschließungsstraße
@@ -5264,7 +4823,7 @@ UseOrientation=Y
 LineWidth=3
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #BABABA"
+"1 c #808080"
 "2 c #FEFEFE"
 String1=0x00,Spielstraße breit
 String2=0x01,Spielstraße breit
@@ -5283,7 +4842,7 @@ LineWidth=3
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FEFEFE"
-"2 c #BABABA"
+"2 c #808080"
 String1=0x00,Fußgängerstraße breit
 String2=0x01,Fußgängerstraße breit
 String3=0x02,Fußgängerstraße
@@ -5920,8 +5479,8 @@ UseOrientation=Y
 LineWidth=4
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #EB989A"
-"2 c #C77E80"
+"1 c #DC96A2"
+"2 c #BF4055"
 String1=0x00,Bundesstraße (wie Autobahn) breit
 String2=0x01,Bundesstraße (wie Autobahn) breit
 String3=0x02,Bundesstraße (wie Autobahn)
@@ -5939,7 +5498,7 @@ LineWidth=4
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FDD6A4"
-"2 c #D4B388"
+"2 c #FBA637"
 String1=0x00,Bundesstraße breit
 String2=0x01,Bundesstraße breit
 String3=0x02,Bundesstraße
