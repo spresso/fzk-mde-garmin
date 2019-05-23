@@ -2697,11 +2697,10 @@ CustomColor=No
 Type=0x16
 UseOrientation=Y
 LineWidth=1
-Xpm="32 2 2  1"
+Xpm="32 1 2  1"
 "! c #FFFFFF"
 "  c none"
 "!!  !!  !!  !!  !!  !!  !!  !!  "
-"                                "
 ;12345678901234567890123456789012
 String1=0x00,[Fußweg]
 String2=0x01,[Fußweg]
@@ -3060,12 +3059,9 @@ CustomColor=No
 [_line]
 Type=0x10109
 UseOrientation=Y
-Xpm="32 2 2  1"
-"! c #A15E12"
-"  c none"
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-;12345678901234567890123456789012
+LineWidth=2
+Xpm="0 0 1 0"
+"1 c #A15E12"
 String1=0x00,Feld- / Waldweg (4,5) breit
 String2=0x01,Feld- / Waldweg (4,5) breit
 String3=0x02,Feld- / Waldweg (4,5)
@@ -3095,12 +3091,9 @@ CustomColor=No
 [_line]
 Type=0x1011d
 UseOrientation=Y
-Xpm="32 2 2  1"
-"! c #A15E12"
-"  c none"
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"                                "
-;12345678901234567890123456789012
+LineWidth=1
+Xpm="0 0 1 0"
+"1 c #A15E12"
 String1=0x00,Feld- / Waldweg (4,5) schmal
 String2=0x01,Feld- / Waldweg (4,5) schmal
 String3=0x02,Feld- / Waldweg (4,5)
@@ -3413,11 +3406,10 @@ CustomColor=No
 Type=0x10e05
 UseOrientation=Y
 LineWidth=1
-Xpm="32 2 2  1"
+Xpm="32 1 2  1"
 "! c #FFFFFF"
 "  c none"
 "!!  !!  !!  !!  !!  !!  !!  !!  "
-"                                "
 String1=0x00,Fußweg schmal
 String2=0x01,Fußweg schmal
 String3=0x02,Fußweg
@@ -3431,12 +3423,9 @@ CustomColor=No
 [_line]
 Type=0x10e06
 UseOrientation=Y
-Xpm="32 2 2  1"
-"! c #009520"
-"  c none"
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"                                "
-;12345678901234567890123456789012
+LineWidth=1
+Xpm="0 0 1 0"
+"1 c #009520"
 String1=0x00,Weg / Pfad schmal
 String2=0x01,Weg / Pfad schmal
 String3=0x02,Weg / Pfad
@@ -3450,7 +3439,7 @@ CustomColor=No
 [_line]
 Type=0x10e07
 UseOrientation=Y
-LineWidth=2
+LineWidth=1
 Xpm="0 0 1 0"
 "1 c #A15E12"
 String1=0x00,Feld- / Waldweg (1) schmal
@@ -3466,12 +3455,9 @@ CustomColor=No
 [_line]
 Type=0x10e08
 UseOrientation=Y
-Xpm="32 2 2  1"
-"! c #A15E12"
-"  c none"
-"!!!!    !!!!    !!!!    !!!!    "
-"                                "
-;12345678901234567890123456789012
+LineWidth=1
+Xpm="0 0 1 0"
+"1 c #A15E12"
 String1=0x00,Feld- / Waldweg (ohne,2,3) schmal
 String2=0x01,Feld- / Waldweg (ohne,2,3) schmal
 String3=0x02,Feld- / Waldweg (ohne,2,3)
@@ -3485,7 +3471,7 @@ CustomColor=No
 [_line]
 Type=0x10e09
 UseOrientation=Y
-LineWidth=3
+LineWidth=2
 Xpm="0 0 1 0"
 "1 c #A15E12"
 String1=0x00,Feld- / Waldweg (1) breit
@@ -3533,12 +3519,9 @@ CustomColor=No
 [_line]
 Type=0x10e0c
 UseOrientation=Y
-Xpm="32 2 2  1"
-"! c #009520"
-"  c none"
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-;12345678901234567890123456789012
+LineWidth=2
+Xpm="0 0 1 0"
+"1 c #009520"
 String1=0x00,Weg / Pfad breit
 String2=0x01,Weg / Pfad breit
 String3=0x02,Weg / Pfad
@@ -3588,12 +3571,9 @@ CustomColor=No
 [_line]
 Type=0x10e0f
 UseOrientation=Y
-Xpm="32 2 2  1"
-"! c #9932CC"
-"  c none"
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-;12345678901234567890123456789012
+LineWidth=2
+Xpm="0 0 1 0"
+"1 c #9932CC"
 String1=0x00,Feldweg (Eingeschränkt)
 String2=0x01,Feldweg (Eingeschränkt)
 String3=0x02,Feldweg (Eingeschränkt)
@@ -3607,12 +3587,9 @@ CustomColor=No
 [_line]
 Type=0x10e11
 UseOrientation=Y
-Xpm="32 2 2  1"
-"! c #9932CC"
-"  c none"
-"  !!  !!  !!  !!  !!  !!  !!  !!"
-"  !!  !!  !!  !!  !!  !!  !!  !!"
-;12345678901234567890123456789012
+LineWidth=2
+Xpm="0 0 1 0"
+"1 c #9932CC"
 String1=0x00,Weg / Pfad (Eingeschränkt) breit
 String2=0x01,Weg / Pfad (Eingeschränkt) breit
 String3=0x02,Weg / Pfad (Eingeschränkt)
@@ -3626,12 +3603,9 @@ CustomColor=No
 [_line]
 Type=0x10e12
 UseOrientation=Y
-Xpm="32 2 2  1"
-"! c #9932CC"
-"  c none"
-"  !!  !!  !!  !!  !!  !!  !!  !!"
-"                                "
-;12345678901234567890123456789012
+LineWidth=1
+Xpm="0 0 1 0"
+"1 c #9932CC"
 String1=0x00,Weg / Pfad (Eingeschränkt) schmal
 String2=0x01,Weg / Pfad (Eingeschränkt) schmal
 String3=0x02,Weg / Pfad (Eingeschränkt)
@@ -3645,7 +3619,7 @@ CustomColor=No
 [_line]
 Type=0x10e13
 UseOrientation=Y
-LineWidth=3
+LineWidth=2
 Xpm="0 0 1 0"
 "1 c #BD65D5"
 String1=0x00,Feld- / Waldweg (1) (Eingeschränkt) breit
@@ -3661,7 +3635,7 @@ CustomColor=No
 [_line]
 Type=0x10e14
 UseOrientation=Y
-LineWidth=2
+LineWidth=1
 Xpm="0 0 1 0"
 "1 c #BD65D5"
 String1=0x00,Feld- / Waldweg (1) (Eingeschränkt) schmal
@@ -3677,12 +3651,9 @@ CustomColor=No
 [_line]
 Type=0x10e15
 UseOrientation=Y
-Xpm="32 2 2  1"
-"! c #9932CC"
-"  c none"
-"!!!!    !!!!    !!!!    !!!!    "
-"!!!!    !!!!    !!!!    !!!!    "
-;12345678901234567890123456789012
+LineWidth=2
+Xpm="0 0 1 0"
+"1 c #9932CC"
 String1=0x00,Feld- / Waldweg (ohne,2,3) (Eingeschränkt) breit
 String2=0x01,Feld- / Waldweg (ohne,2,3) (Eingeschränkt) breit
 String3=0x02,Feld- / Waldweg (ohne,2,3) (Eingeschränkt)
@@ -3696,12 +3667,9 @@ CustomColor=No
 [_line]
 Type=0x10e16
 UseOrientation=Y
-Xpm="32 2 2  1"
-"! c #9932CC"
-"  c none"
-"!!!!    !!!!    !!!!    !!!!    "
-"                                "
-;12345678901234567890123456789012
+LineWidth=1
+Xpm="0 0 1 0"
+"1 c #9932CC"
 String1=0x00,Feld- / Waldweg (ohne,2,3) (Eingeschränkt) schmal
 String2=0x01,Feld- / Waldweg (ohne,2,3) (Eingeschränkt) schmal
 String3=0x02,Feld- / Waldweg (ohne,2,3) (Eingeschränkt)
@@ -3715,12 +3683,9 @@ CustomColor=No
 [_line]
 Type=0x10e17
 UseOrientation=Y
-Xpm="32 2 2  1"
-"! c #9932CC"
-"  c none"
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-;12345678901234567890123456789012
+LineWidth=2
+Xpm="0 0 1 0"
+"1 c #9932CC"
 String1=0x00,Feld- / Waldweg (4,5) (Eingeschränkt) breit
 String2=0x01,Feld- / Waldweg (4,5) (Eingeschränkt) breit
 String3=0x02,Feld- / Waldweg (4,5) (Eingeschränkt)
@@ -3734,12 +3699,9 @@ CustomColor=No
 [_line]
 Type=0x10e18
 UseOrientation=Y
-Xpm="32 2 2  1"
-"! c #A15E12"
-"  c none"
-"!!!!    !!!!    !!!!    !!!!    "
-"!!!!    !!!!    !!!!    !!!!    "
-;12345678901234567890123456789012
+LineWidth=2
+Xpm="0 0 1 0"
+"1 c #A15E12"
 String1=0x00,Feld- / Waldweg (ohne,2,3) breit
 String2=0x01,Feld- / Waldweg (ohne,2,3) breit
 String3=0x02,Feld- / Waldweg (ohne,2,3)
@@ -3835,12 +3797,9 @@ CustomColor=No
 [_line]
 Type=0x10e1e
 UseOrientation=Y
-Xpm="32 2 2  1"
-"! c #9932CC"
-"  c none"
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"                                "
-;12345678901234567890123456789012
+LineWidth=1
+Xpm="0 0 1 0"
+"1 c #9932CC"
 String1=0x00,Feld- / Waldweg (4,5) (Eingeschränkt) schmal
 String2=0x01,Feld- / Waldweg (4,5) (Eingeschränkt) schmal
 String3=0x02,Feld- / Waldweg (4,5) (Eingeschränkt)
@@ -4655,9 +4614,11 @@ CustomColor=No
 [_line]
 Type=0x11f11
 UseOrientation=Y
-Xpm="32 2 2  1"
+Xpm="32 4 2  1"
 "! c #FF656A"
 "  c none"
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
 "!!  !!  !!  !!  !!  !!  !!  !!  "
 "!!  !!  !!  !!  !!  !!  !!  !!  "
 ;12345678901234567890123456789012
@@ -4674,11 +4635,10 @@ CustomColor=No
 [_line]
 Type=0x11f12
 UseOrientation=Y
-LineWidth=2
-Xpm="32 2 2  1"
+LineWidth=1
+Xpm="32 1 2  1"
 "! c #FFFFFF"
 "  c none"
-"!!  !!  !!  !!  !!  !!  !!  !!  "
 "!!  !!  !!  !!  !!  !!  !!  !!  "
 String1=0x00,Fußweg
 String2=0x01,Fußweg
