@@ -3060,10 +3060,14 @@ CustomColor=No
 Type=0x10109
 UseOrientation=Y
 LineWidth=2
-Xpm="0 0 1 0"
-"1 c #A15E12"
-String1=0x00,Feld- / Waldweg (4,5) breit
-String2=0x01,Feld- / Waldweg (4,5) breit
+Xpm="32 2 2  1"
+"! c #A15E12"
+"  c none"
+"!!!!    !!!!    !!!!    !!!!    "
+"!!!!    !!!!    !!!!    !!!!    "
+;12345678901234567890123456789012
+String1=0x00,Feld- / Waldweg (4,5)
+String2=0x01,Feld- / Waldweg (4,5)
 String3=0x02,Feld- / Waldweg (4,5)
 String4=0x04,Track/Dirt Road (4,5)
 ExtendedLabels=Y
@@ -3092,10 +3096,13 @@ CustomColor=No
 Type=0x1011d
 UseOrientation=Y
 LineWidth=1
-Xpm="0 0 1 0"
-"1 c #A15E12"
-String1=0x00,Feld- / Waldweg (4,5) schmal
-String2=0x01,Feld- / Waldweg (4,5) schmal
+Xpm="32 1 2  1"
+"! c #A15E12"
+"  c none"
+"!!!!    !!!!    !!!!    !!!!    "
+;12345678901234567890123456789012
+String1=0x00,Feld- / Waldweg (4,5)
+String2=0x01,Feld- / Waldweg (4,5)
 String3=0x02,Feld- / Waldweg (4,5)
 String4=0x04,Track/Dirt Road (4,5)
 ExtendedLabels=Y
@@ -3442,8 +3449,8 @@ UseOrientation=Y
 LineWidth=1
 Xpm="0 0 1 0"
 "1 c #A15E12"
-String1=0x00,Feld- / Waldweg (1) schmal
-String2=0x01,Feld- / Waldweg (1) schmal
+String1=0x00,Feld- / Waldweg (1)
+String2=0x01,Feld- / Waldweg (1)
 String3=0x02,Feld- / Waldweg (1)
 String4=0x04,Track/Dirt Road (1)
 ExtendedLabels=Y
@@ -3458,10 +3465,10 @@ UseOrientation=Y
 LineWidth=1
 Xpm="0 0 1 0"
 "1 c #A15E12"
-String1=0x00,Feld- / Waldweg (ohne,2,3) schmal
-String2=0x01,Feld- / Waldweg (ohne,2,3) schmal
-String3=0x02,Feld- / Waldweg (ohne,2,3)
-String4=0x04,Track/Dirt Road (n.a,2,3)
+String1=0x00,Feld- / Waldweg (2,3)
+String2=0x01,Feld- / Waldweg (2,3)
+String3=0x02,Feld- / Waldweg (2,3)
+String4=0x04,Track/Dirt Road (2,3)
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
@@ -3474,8 +3481,8 @@ UseOrientation=Y
 LineWidth=2
 Xpm="0 0 1 0"
 "1 c #A15E12"
-String1=0x00,Feld- / Waldweg (1) breit
-String2=0x01,Feld- / Waldweg (1) breit
+String1=0x00,Feld- / Waldweg (1)
+String2=0x01,Feld- / Waldweg (1)
 String3=0x02,Feld- / Waldweg (1)
 String4=0x04,Track/Dirt Road (1)
 ExtendedLabels=Y
@@ -3622,10 +3629,10 @@ UseOrientation=Y
 LineWidth=2
 Xpm="0 0 1 0"
 "1 c #BD65D5"
-String1=0x00,Feld- / Waldweg (1) (Eingeschränkt) breit
-String2=0x01,Feld- / Waldweg (1) (Eingeschränkt) breit
-String3=0x02,Feld- / Waldweg (1) (Eingeschränkt)
-String4=0x04,Track/Dirt Road (1) (restricted)
+String1=0x00,Feld- / Waldweg (eingeschränkt)
+String2=0x01,Feld- / Waldweg (eingeschränkt)
+String3=0x02,Feld- / Waldweg (eingeschränkt)
+String4=0x04,Track/Dirt Road (restricted)
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
@@ -3638,10 +3645,10 @@ UseOrientation=Y
 LineWidth=1
 Xpm="0 0 1 0"
 "1 c #BD65D5"
-String1=0x00,Feld- / Waldweg (1) (Eingeschränkt) schmal
-String2=0x01,Feld- / Waldweg (1) (Eingeschränkt) schmal
-String3=0x02,Feld- / Waldweg (1) (Eingeschränkt)
-String4=0x04,Track/Dirt Road (1) (restricted)
+String1=0x00,Feld- / Waldweg (eingeschränkt)
+String2=0x01,Feld- / Waldweg (eingeschränkt)
+String3=0x02,Feld- / Waldweg (eingeschränkt)
+String4=0x04,Track/Dirt Road (restricted)
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
@@ -3654,10 +3661,10 @@ UseOrientation=Y
 LineWidth=2
 Xpm="0 0 1 0"
 "1 c #9932CC"
-String1=0x00,Feld- / Waldweg (ohne,2,3) (Eingeschränkt) breit
-String2=0x01,Feld- / Waldweg (ohne,2,3) (Eingeschränkt) breit
-String3=0x02,Feld- / Waldweg (ohne,2,3) (Eingeschränkt)
-String4=0x04,Track/Dirt Road (n.a,2,3) (restricted)
+String1=0x00,Feld- / Waldweg (eingeschränkt)
+String2=0x01,Feld- / Waldweg (eingeschränkt)
+String3=0x02,Feld- / Waldweg (eingeschränkt)
+String4=0x04,Track/Dirt Road (restricted)
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
@@ -3670,10 +3677,10 @@ UseOrientation=Y
 LineWidth=1
 Xpm="0 0 1 0"
 "1 c #9932CC"
-String1=0x00,Feld- / Waldweg (ohne,2,3) (Eingeschränkt) schmal
-String2=0x01,Feld- / Waldweg (ohne,2,3) (Eingeschränkt) schmal
-String3=0x02,Feld- / Waldweg (ohne,2,3) (Eingeschränkt)
-String4=0x04,Track/Dirt Road (n.a,2,3) (restricted)
+String1=0x00,Feld- / Waldweg (eingeschränkt)
+String2=0x01,Feld- / Waldweg (eingeschränkt)
+String3=0x02,Feld- / Waldweg (eingeschränkt)
+String4=0x04,Track/Dirt Road (restricted)
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
@@ -3684,12 +3691,16 @@ CustomColor=No
 Type=0x10e17
 UseOrientation=Y
 LineWidth=2
-Xpm="0 0 1 0"
-"1 c #9932CC"
-String1=0x00,Feld- / Waldweg (4,5) (Eingeschränkt) breit
-String2=0x01,Feld- / Waldweg (4,5) (Eingeschränkt) breit
-String3=0x02,Feld- / Waldweg (4,5) (Eingeschränkt)
-String4=0x04,Track/Dirt Road (4,5) (restricted)
+Xpm="32 2 2  1"
+"! c #9932CC"
+"  c none"
+"!!!!    !!!!    !!!!    !!!!    "
+"!!!!    !!!!    !!!!    !!!!    "
+;12345678901234567890123456789012
+String1=0x00,Feld- / Waldweg (eingeschränkt)
+String2=0x01,Feld- / Waldweg (eingeschränkt)
+String3=0x02,Feld- / Waldweg (eingeschränkt)
+String4=0x04,Track/Dirt Road (restricted)
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
@@ -3702,10 +3713,10 @@ UseOrientation=Y
 LineWidth=2
 Xpm="0 0 1 0"
 "1 c #A15E12"
-String1=0x00,Feld- / Waldweg (ohne,2,3) breit
-String2=0x01,Feld- / Waldweg (ohne,2,3) breit
-String3=0x02,Feld- / Waldweg (ohne,2,3)
-String4=0x04,Track/Dirt Road (n.a,2,3)
+String1=0x00,Feld- / Waldweg (2,3)
+String2=0x01,Feld- / Waldweg (2,3)
+String3=0x02,Feld- / Waldweg (2,3)
+String4=0x04,Track/Dirt Road (2,3)
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
@@ -3798,12 +3809,15 @@ CustomColor=No
 Type=0x10e1e
 UseOrientation=Y
 LineWidth=1
-Xpm="0 0 1 0"
-"1 c #9932CC"
-String1=0x00,Feld- / Waldweg (4,5) (Eingeschränkt) schmal
-String2=0x01,Feld- / Waldweg (4,5) (Eingeschränkt) schmal
-String3=0x02,Feld- / Waldweg (4,5) (Eingeschränkt)
-String4=0x04,Track/Dirt Road (4,5) (restricted)
+Xpm="32 1 2  1"
+"! c #9932CC"
+"  c none"
+"!!!!    !!!!    !!!!    !!!!    "
+;12345678901234567890123456789012
+String1=0x00,Feld- / Waldweg (eingeschränkt)
+String2=0x01,Feld- / Waldweg (eingeschränkt)
+String3=0x02,Feld- / Waldweg (eingeschränkt)
+String4=0x04,Track/Dirt Road (restricted)
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
