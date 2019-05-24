@@ -671,7 +671,7 @@ place = suburb [0x0b00 resolution 21]
 place = town [0x0600 resolution 18]
 
 # Dorf (< 2.000 Einwohner), ehemals selbständige Gemeinde. [point, closedway]
-place = village [0x0c00 resolution 21]
+place = village [0x0c00 resolution 20]
 
 
 # ------------------------------------------
