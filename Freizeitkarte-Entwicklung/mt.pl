@@ -520,9 +520,9 @@ my $mapisolang = $EMPTY;
 my $maptype    = $EMPTY;
 my $mapparent  = $EMPTY;
 my $langdesc   = $EMPTY;
-my $maptypfile = "freizeit.TYP";
-my $mapstyle    = "fzk";
-my $mapstyledir = 'style/fzk';
+my $maptypfile = "bicycle.TYP";
+my $mapstyle    = "bicycle";
+my $mapstyledir = 'style/bicycle';
 
 my $releasestring  = $EMPTY;
 my $releasenumeric = $EMPTY;
