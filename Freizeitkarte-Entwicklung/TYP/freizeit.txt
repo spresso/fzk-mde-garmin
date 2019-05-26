@@ -2806,7 +2806,7 @@ Type=0x20
 UseOrientation=Y
 LineWidth=1
 Xpm="0 0 1 0"
-"1 c #C0C0C0"
+"1 c #A0A0A0"
 String1=0x00,Höhenlinie minor
 String2=0x01,Höhenlinie minor
 String3=0x02,Höhenlinie minor
@@ -2822,7 +2822,7 @@ Type=0x21
 UseOrientation=Y
 LineWidth=1
 Xpm="0 0 1 0"
-"1 c #C0C0C0"
+"1 c #A0A0A0"
 String1=0x00,Höhenlinie medium (breit)
 String2=0x01,Höhenlinie medium (breit)
 String3=0x02,Höhenlinie medium (breit)
@@ -2839,7 +2839,7 @@ Type=0x22
 UseOrientation=Y
 LineWidth=1
 Xpm="0 0 1 0"
-"1 c #C0C0C0"
+"1 c #A0A0A0"
 String1=0x00,Höhenlinie major (breit)
 String2=0x01,Höhenlinie major (breit)
 String3=0x02,Höhenlinie major (breit)
