@@ -51,6 +51,7 @@ my @actions = (
   [ 'nsisgmap',   'C. create nsis installer (GMAP for BaseCamp Windows)' ,            'optional' ,    'yes' ,      '23' ],
   [ 'gmap2',      'D. create gmap file - gmapi-builder (for BaseCamp OS X, Windows)', 'optional' ,    'yes' ,      '23' ],
   [ 'gmap3',      'D. create gmap file - jmc_cli (for BaseCamp OS X, Windows)' ,      'optional' ,    'yes' ,      '23' ],
+  [ 'all',        'do it' ,                                                           'optional' ,    'yes' ,      '23' ],
   [ 'bim',        'E1.build images: create, fetch_*, join, split, build' ,            'optional' ,    'yes' ,      '23' ],
   [ 'bam',        'E2.build all maps: gmap, nsis, gmapsupp, imagedir' ,               'optional' ,    'yes' ,      '23' ],
   [ 'pmd',        'F1.Prepare Map Data: create, fetch_*, join, split' ,               'optional' ,    'no' ,       '23' ],
@@ -481,9 +482,9 @@ get_osdetails();
 # command line parameters
 my $help     = $EMPTY;
 my $optional = $EMPTY;
-my $ram      = $EMPTY;
-my $cores    = 2;
-my $ele      = 20;
+my $ram      = 16000;
+my $cores    = 8;
+my $ele      = 0;
 my $hqele    = $EMPTY;
 my $clm      = 1;   # eventually unused ?
 my $typfile  = $EMPTY;
@@ -924,6 +925,33 @@ elsif ( $actionname eq 'gmap3' ) {
   update_ele_license       ();
   create_typfile   ();
   create_gmapfile_jmc_cli ();
+}
+elsif ( $actionname eq 'all' ) {
+  purge_dirs               ();
+  create_dirs              ();
+  if ( $maptype == 2 ) {
+	  extract_osm          ();
+  }
+  else {
+	  fetch_osmdata        ();
+  }
+  fetch_eledata            ();
+
+  check_osmid              ();
+  join_mapdata             ();
+  split_mapdata            ();
+  update_ele_license       ();
+  create_cfgfile           ();
+  create_typtranslations   ();
+  compile_typfiles         ();
+  create_typfile           ();
+  create_styletranslations ();
+  preprocess_styles        ();
+  build_map                ();
+
+  create_typfile  ();
+  create_gmapfile ();
+  create_gmapsuppfile ();
 }
 elsif ( $actionname eq 'bim' ) {
   purge_dirs               ();
