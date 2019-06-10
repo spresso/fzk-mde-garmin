@@ -4674,7 +4674,8 @@ sub create_gmapsuppfile {
 
   # copy the created gmapsupp to the install directory
   my $filename = "gmapsupp.img";
-  move ( $filename, "$INSTALLDIR/$filename" ) or die ( "move() failed: $!\n" );
+  my $customfilename = "$mapvariantname.img";
+  move ( $filename, "$INSTALLDIR/$customfilename" ) or die ( "move() failed: $!\n" );
 
   # remove the unneeded temporary files again
   unlink ( "osmmap.tdb" );
@@ -4853,7 +4854,7 @@ sub zip_maps {
   }
 
   # gmapsupp (example: gmapsupp.img -> DEU_de_gmapsupp.img.zip)
-  $source = 'gmapsupp.img';
+  $source = '$mapvariantname.img';
   $destination = $mapcode . '_' . $maplang . '_' . $source . '.zip';
   $command     = $zipper . "$destination $source";
   if ( -e $source ) {
@@ -5884,7 +5885,7 @@ sub show_actionsummary {
 # Show wrong target warning
 # -----------------------------------------
 sub show_wrongtargetwarning {
-
+return;
   # Let the user know about the wrong combination of maps and actions
   printf { *STDOUT } ( "\n" ); 
   printf { *STDOUT } ( "\nWarning !   the action '%s' is not supposed to run on this map of type %s.", $actionname, $maptype ); 
