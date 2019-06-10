@@ -495,6 +495,7 @@ my $downloadbar = $EMPTY;
 my $continuedownload = $EMPTY;
 my $downloadspeed = $EMPTY;
 my $contourmap = $EMPTY;
+my $norouting = $EMPTY;
 
 my $dempath = $EMPTY;
 my $demdists = $EMPTY;
@@ -538,7 +539,7 @@ my $mkgmap_common_parameter = $EMPTY;
 # get the command line parameters
 if ( ! GetOptions ( 'h|?|help' => \$help, 'o|optional' => \$optional, 'u|unicode' => \$unicode, 'downloadbar' => \$downloadbar, 'continuedownload' => \$continuedownload, 'downloadspeed=s' => \$downloadspeed, 
                     'ram=s' => \$ram, 'cores=s' => \$cores, 'ele=s' => \$ele, 'hqele' => \$hqele, 'typfile=s' => \$typfile, 'style=s' => \$styledir, 'language=s' => \$language, 'ntl=s' => \$nametaglist, 
-                    'dempath=s' => \$dempath, 'demdists=s' => \$demdists, 'demtype=s' => \$demtype, 'contourmap' => \$contourmap ) ) {
+                    'dempath=s' => \$dempath, 'demdists=s' => \$demdists, 'demtype=s' => \$demtype, 'contourmap' => \$contourmap, 'norouting' => \$norouting ) ) {
   printf { *STDOUT } ( "ERROR:\n  Unknown option.\n\n\n" );
   show_usage ();
   exit(1);   
@@ -2444,7 +2445,7 @@ sub create_cfgfile {
   printf { $fh } ( "\n# Miscellaneous options:\n" );
   printf { $fh } ( "# ---------------------\n" );
 
-  if ($contourmap eq $EMPTY) {
+  if (($contourmap eq $EMPTY) && ($norouting eq $EMPTY)) {
   printf { $fh }
     (   "\n"
       . "# --route\n"
@@ -5969,6 +5970,10 @@ sub show_help {
       . "--contourmap\n"
       . "           = Create a pure contour map without any OSM map data (create, fetch_ele, join, split, build, gmapsupp).\n"
       . "                --contourmap\n"      
+      . "\n"
+      . "--norouting\n"
+      . "           = create a map without routing fuctionality to decrease map size (build).\n"
+      . "                --norouting\n"      
       . "\n"
       . "PPO        = preprocessor options (multiple possible), to be invoked with D<option>\n"
       . "\n"
