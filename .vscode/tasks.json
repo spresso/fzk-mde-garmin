@@ -1,0 +1,101 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "run single action",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceRoot}/Freizeitkarte-Entwicklung",
+            },
+            "command": "perl mt.pl --ram=16000 --cores=8 --ele=0 ${input:action} ${input:region}"
+        },
+        {
+            "label": "build map region",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceRoot}/Freizeitkarte-Entwicklung",
+            },
+            "command": "perl mt.pl --ram=16000 --cores=8 --ele=0 all ${input:region}"
+        },
+        {
+            "label": "build contour map",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceRoot}/Freizeitkarte-Entwicklung",
+            },
+            "command": "perl mt.pl --ram=16000 --cores=8 --language=\"de\" --contourmap --ele=20 all ${input:contour_region}"
+        }
+    ],
+    "inputs": [
+        {
+            "id": "action",
+            "description": "actions:",
+            "type": "pickString",
+            "options": [
+                "bootstrap",
+                "create", 
+                "fetch_osm",
+                "fetch_ele",
+                "join",
+                "split",
+                "build",
+                "gmap",
+                "gmapsupp",
+            ],
+        },
+        {
+            "id": "region",
+            "description": "map region:",
+            "default": "Freizeitkarte_NIEDERSACHSEN",
+            "type": "pickString",
+            "options": [
+                "Freizeitkarte_BADEN-WUERTTEMBERG",
+                "Freizeitkarte_BAYERN",
+                "Freizeitkarte_BERLIN",
+                "Freizeitkarte_BRANDENBURG",
+                "Freizeitkarte_BREMEN",
+                "Freizeitkarte_HAMBURG",
+                "Freizeitkarte_HESSEN",
+                "Freizeitkarte_MECKLENBURG-VORPOMMERN",
+                "Freizeitkarte_NIEDERSACHSEN", 
+                "Freizeitkarte_NORDRHEIN-WESTFALEN",
+                "Freizeitkarte_RHEINLAND-PFALZ",
+                "Freizeitkarte_SAARLAND",
+                "Freizeitkarte_SACHSEN",
+                "Freizeitkarte_SACHSEN-ANHALT",
+                "Freizeitkarte_SCHLESWIG-HOLSTEIN",
+                "Freizeitkarte_THUERINGEN",
+                "Freizeitkarte_BEL",
+                "Freizeitkarte_DEU",
+                "Freizeitkarte_DNK",
+                "Freizeitkarte_ESP",
+                "Freizeitkarte_FIN",
+                "Freizeitkarte_FRA",
+                "Freizeitkarte_ITA",
+                "Freizeitkarte_NLD",
+                "Freizeitkarte_NOR",
+                "Freizeitkarte_LUX",
+                "Freizeitkarte_SWE",
+                "Freizeitkarte_CAN",
+                "Freizeitkarte_MYS_SGP_BRN",
+                "Freizeitkarte_US_HAWAII",
+                "Freizeitkarte_US_NORTHEAST",
+                "Freizeitkarte_US_SOUTH",
+                "Freizeitkarte_US_MIDWEST",
+                "Freizeitkarte_US_WEST"
+            ],
+        },
+        {
+            "id": "contour_region",
+            "description": "contour region:",
+            "default": "Freizeitkarte_DEU",
+            "type": "pickString",
+            "options": [
+                "Freizeitkarte_DEU",
+                "Freizeitkarte_EUROPE"
+            ],
+        },
+    ]
+}
