@@ -929,11 +929,18 @@ elsif ( $actionname eq 'gmap3' ) {
 elsif ( $actionname eq 'all' ) {
   purge_dirs               ();
   create_dirs              ();
-  if ( $maptype == 2 ) {
-	  extract_osm          ();
+  if ($contourmap) 
+  {
+    printf { *STDERR } ( "\nIgnore map data for contour map creation.\n" );
   }
-  else {
-	  fetch_osmdata        ();
+  else
+  {
+    if ( $maptype == 2 ) {
+      extract_osm          ();
+    }
+    else {
+      fetch_osmdata        ();
+    }
   }
   fetch_eledata            ();
 
