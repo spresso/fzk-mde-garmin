@@ -4,12 +4,20 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "bootstrap",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceRoot}/Freizeitkarte-Entwicklung",
+            },
+            "command": "perl mt.pl --ram=20000 --cores=8 --ele=0 bootstrap"
+        },
+        {
             "label": "run single action",
             "type": "shell",
             "options": {
                 "cwd": "${workspaceRoot}/Freizeitkarte-Entwicklung",
             },
-            "command": "perl mt.pl --ram=16000 --cores=8 --ele=0 ${input:action} ${input:region}"
+            "command": "perl mt.pl --ram=20000 --cores=8 --ele=0 ${input:action} ${input:region}"
         },
         {
             "label": "build map region",
@@ -17,7 +25,7 @@
             "options": {
                 "cwd": "${workspaceRoot}/Freizeitkarte-Entwicklung",
             },
-            "command": "perl mt.pl --ram=16000 --cores=8 --ele=0 all ${input:region}"
+            "command": "perl mt.pl --ram=20000 --cores=8 --ele=0 all ${input:region}"
         },
         {
             "label": "build contour map",
@@ -25,7 +33,7 @@
             "options": {
                 "cwd": "${workspaceRoot}/Freizeitkarte-Entwicklung",
             },
-            "command": "perl mt.pl --ram=16000 --cores=8 --language=\"de\" --contourmap --ele=20 all ${input:contour_region}"
+            "command": "perl mt.pl --ram=20000 --cores=8 --language=\"de\" --contourmap --ele=20 all ${input:contour_region}"
         }
     ],
     "inputs": [
@@ -34,7 +42,6 @@
             "description": "actions:",
             "type": "pickString",
             "options": [
-                "bootstrap",
                 "create", 
                 "fetch_osm",
                 "fetch_ele",
@@ -67,10 +74,12 @@
                 "Freizeitkarte_SACHSEN-ANHALT",
                 "Freizeitkarte_SCHLESWIG-HOLSTEIN",
                 "Freizeitkarte_THUERINGEN",
+                "Freizeitkarte_AUT",
                 "Freizeitkarte_BEL",
                 "Freizeitkarte_DEU",
                 "Freizeitkarte_DNK",
                 "Freizeitkarte_ESP",
+                "Freizeitkarte_ESP_CANARIAS",
                 "Freizeitkarte_FIN",
                 "Freizeitkarte_FRA",
                 "Freizeitkarte_ITA",
