@@ -433,7 +433,7 @@ my $ACTIONTARGET = 4;
 my $LANGCODE = 0;
 my $LANGDESC = 1;
 
-my $VERSION = '1.3.17 - 2019/04/14';
+my $VERSION = '1.3.18 - 2021/01/18';
 
 # Maximale Speichernutzung (Heapsize im MB) beim Splitten und Compilieren
 my $javaheapsize = 1536;
@@ -3859,7 +3859,7 @@ sub create_nsis_exe_full {
 
 # -----------------------------------------
 # Create the NSI file needed for compiling the Windows Installer
-# (old style installer including ImageDir Set)
+# (new style installer: installer only)
 # -----------------------------------------
 sub create_nsis_nsi_gmap {
 
@@ -4182,7 +4182,7 @@ sub create_nsis_nsi_gmap {
   printf { $fh } ( "  LogEx::Write  \"   pre installation:\"\n" );
   printf { $fh } ( "  LogEx::Write  \"SectionMain: Garmin Maps Dir:\"\n" );
   printf { $fh } ( "  LogEx::Write  \"   --------------------------------------------------------------------------------\"\n" );
-  printf { $fh } ( "  ExecDos::exec 'cmd /C dir \$GarminMapsDir' \"\" \"\$MyTempDir\\garminmapsdir-output.log\"\n" );
+  printf { $fh } ( "  ExecDos::exec 'cmd /C dir \"\$GarminMapsDir\"' \"\" \"\$MyTempDir\\garminmapsdir-output.log\"\n" );
   printf { $fh } ( "  LogEx::AddFile \"   \" \"\$MyTempDir\\garminmapsdir-output.log\"\n" );
   printf { $fh } ( "  LogEx::Write  \"   --------------------------------------------------------------------------------\"\n" );
   printf { $fh } ( "  \n" );
@@ -4200,7 +4200,6 @@ sub create_nsis_nsi_gmap {
   printf { $fh } ( "  LogEx::Write  \"   src: \$EXEDIR\\\${GMAP_ARCHIVE}\"\n" );
   printf { $fh } ( "  LogEx::Write  \"   dst: \$INSTDIR\"\n" );
   printf { $fh } ( "  ExecWait '\"\$MyTempDir\\7za.exe\" x \"\$EXEDIR\\\${GMAP_ARCHIVE}\" -aoa -o\"\$INSTDIR\"' \$0\n" );
-  printf { $fh } ( "  Pop \$0\n" );
   printf { $fh } ( "  IntCmp \$0 0 +2\n" );
   printf { $fh } ( "  call InstallError\n" );
   printf { $fh } ( "  \n" );
@@ -4232,7 +4231,7 @@ sub create_nsis_nsi_gmap {
   printf { $fh } ( "  LogEx::Write  \"   pre installation:\"\n" );
   printf { $fh } ( "  LogEx::Write  \"SectionMain: Garmin Maps Dir:\"\n" );
   printf { $fh } ( "  LogEx::Write  \"   --------------------------------------------------------------------------------\"\n" );
-  printf { $fh } ( "  ExecDos::exec 'cmd /C dir \$GarminMapsDir' \"\" \"\$MyTempDir\\garminmapsdir-output.log\"\n" );
+  printf { $fh } ( "  ExecDos::exec 'cmd /C dir \"\$GarminMapsDir\"' \"\" \"\$MyTempDir\\garminmapsdir-output.log\"\n" );
   printf { $fh } ( "  LogEx::AddFile \"   \" \"\$MyTempDir\\garminmapsdir-output.log\"\n" );
   printf { $fh } ( "  LogEx::Write  \"   --------------------------------------------------------------------------------\"\n" );
   printf { $fh } ( "  \n" );
@@ -4315,7 +4314,7 @@ sub create_nsis_nsi_gmap {
 
 # -----------------------------------------
 # Compile the NSI file into the final Installer for Windows
-# (old style Installer containing ImageDir files)
+# (new style installer: installer only)
 # Tool : makensis.exe
 # OS   : Linux, Windows
 # -----------------------------------------
@@ -4511,12 +4510,22 @@ sub create_gmapfile_jmc_cli {
 # used for gmapsupp and gmapfile
 sub set_mkgmap_common_parameter {
 
+  my $tmp_description = "$mapname (Release $releasestring)";
+  
+  # make sure the description is not more than 50 characters
+  if ( length($tmp_description) > 50 ) {
+     $tmp_description = "$mapname ($releasestring)";
+	 if ( length($tmp_description) > 50 ) {
+	 $tmp_description = substr( $tmp_description, 0, 50 );
+	 }
+  }
+
   $mkgmap_common_parameter = sprintf (
         "--index --split-name-index "
 	  . "--code-page=$mapcodepage "
       . "--license-file=$mapname.license "
       . "--product-id=1 --family-id=$mapid --family-name=\"$mapname\" "
-      . "--series-name=\"$mapname\" --description=\"$mapname (Release $releasestring)\" "
+      . "--series-name=\"$mapname\" --description=\"$tmp_description\" "
       . "--overview-mapname=\"$mapname\" --overview-mapnumber=%s0000 "
       . "--product-version=\"%d\" $mapid*.img $mapid.TYP "
       . "--tdbfile "
