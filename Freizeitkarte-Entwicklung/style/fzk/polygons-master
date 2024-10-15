@@ -29,6 +29,8 @@
 #                             Changes regarding new tagging of forests: tag leaf_type implemented
 # Version:  0.20 -26.11.2016  handling highway=path with area=yes
 # Version:  0.21 -23.12.2019  Überflutete Gebiete in der Slowakei durch falsches Tagging natural=basin; deaktiviert
+# Version:  0.22 -28.04.2024  Deactivating 'industry' pattern drawing for landuse = harbour. 
+#                             Reason: harbours can contain also water areas
 
 #
 # Copyright (C) 2011, 2013 Projekt Freizeitkarte <freizeitkarte@googlemail.com>
@@ -469,9 +471,10 @@ landuse = greenfield [0x27 resolution 20]
 # Gewächshausfläche. [closedway]
 landuse = greenhouse_horticulture [0x4e resolution 20]
 
+# Deactivated 28.4.2024 / keenonkites
 # Großes Hafengebiet / -areal: The harbour site (land area, not area of water), mostly fenced or
 # outlined by hedge, barrier or access restriction is tagged on land using "landuse=harbour". [?]
-landuse = harbour [0x0c resolution 20]
+# landuse = harbour [0x0c resolution 20]
 
 # Gewerbe-/Industriegebiet (überwiegend Werkstätten, Fabriken oder Lagerhallen). [point, closedway]
 landuse = industrial [0x0c resolution 17]
